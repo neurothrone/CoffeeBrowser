@@ -1,0 +1,35 @@
+﻿<!--<Project Sdk="Microsoft.NET.Sdk">-->
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWindowsForms>true</UseWindowsForms>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CoffeeBrowser.Library\CoffeeBrowser.Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Components.WebView.WindowsForms" Version="8.0.61" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AndroidAsset Include="wwwroot\css\app.css" />
+      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+      <AndroidAsset Include="wwwroot\favicon.png" />
+      <AndroidAsset Include="wwwroot\index.html" />
+      <AndroidAsset Include="wwwroot\logo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Update="MainForm.cs">
+        <SubType>Form</SubType>
+      </Compile>
+    </ItemGroup>
+
+</Project>

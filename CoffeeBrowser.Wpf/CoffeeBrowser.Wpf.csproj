@@ -1,0 +1,29 @@
+﻿<!--<Project Sdk="Microsoft.NET.Sdk">-->
+<Project Sdk="Microsoft.NET.Sdk.Razor">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <UseWPF>true</UseWPF>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CoffeeBrowser.Library\CoffeeBrowser.Library.csproj" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <AndroidAsset Include="wwwroot\css\app.css" />
+      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+      <AndroidAsset Include="wwwroot\favicon.png" />
+      <AndroidAsset Include="wwwroot\index.html" />
+      <AndroidAsset Include="wwwroot\logo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.AspNetCore.Components.WebView.Wpf" Version="8.0.61" />
+    </ItemGroup>
+
+</Project>
