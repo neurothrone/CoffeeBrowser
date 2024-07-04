@@ -31,6 +31,7 @@ partial class MainForm
     /// </summary>
     private void InitializeComponent()
     {
+        ComponentResourceManager resources = new ComponentResourceManager(typeof(MainForm));
         blazorWebView = new Microsoft.AspNetCore.Components.WebView.WindowsForms.BlazorWebView();
         SuspendLayout();
         // 
@@ -50,6 +51,7 @@ partial class MainForm
         AutoScaleMode = AutoScaleMode.Font;
         ClientSize = new Size(800, 450);
         Controls.Add(blazorWebView);
+        Icon = (Icon)resources.GetObject("$this.Icon");
         Name = "MainForm";
         Text = "MainForm";
         ResumeLayout(false);

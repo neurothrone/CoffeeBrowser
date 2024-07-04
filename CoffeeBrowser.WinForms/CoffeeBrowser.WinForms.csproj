@@ -18,18 +18,19 @@
     </ItemGroup>
 
     <ItemGroup>
-      <AndroidAsset Include="wwwroot\css\app.css" />
-      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css" />
-      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
-      <AndroidAsset Include="wwwroot\favicon.png" />
       <AndroidAsset Include="wwwroot\index.html" />
-      <AndroidAsset Include="wwwroot\logo.png" />
     </ItemGroup>
 
     <ItemGroup>
       <Compile Update="MainForm.cs">
         <SubType>Form</SubType>
       </Compile>
+    </ItemGroup>
+
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\css\app.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\css\bootstrap\bootstrap.min.css.map" />
     </ItemGroup>
 
 </Project>

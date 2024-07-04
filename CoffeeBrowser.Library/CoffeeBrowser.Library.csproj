@@ -22,4 +22,17 @@
       <AdditionalFiles Include="Components\Pages\Coffees.razor" />
     </ItemGroup>
 
+    <ItemGroup>
+      <AndroidAsset Include="wwwroot\css\app.css" />
+      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css" />
+      <AndroidAsset Include="wwwroot\css\bootstrap\bootstrap.min.css.map" />
+      <AndroidAsset Include="wwwroot\favicon.png" />
+      <AndroidAsset Include="wwwroot\logo.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <Content Remove="wwwroot\favicon.ico" />
+      <None Remove="Resources\favicon.png" />
+    </ItemGroup>
+
 </Project>

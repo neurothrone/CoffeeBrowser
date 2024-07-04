@@ -1,3 +1,5 @@
+using Microsoft.AspNetCore.Components.Authorization;
+using CoffeeBrowser.BlazorWeb.Auth;
 using CoffeeBrowser.BlazorWeb.Components;
 using CoffeeBrowser.Library.Components.Pages;
 using CoffeeBrowser.Library.Services;
@@ -7,6 +9,9 @@ var builder = WebApplication.CreateBuilder(args);
 // Add services to the container.
 builder.Services.AddRazorComponents()
     .AddInteractiveServerComponents();
+
+builder.Services.AddAuthorizationCore();
+builder.Services.AddScoped<AuthenticationStateProvider, CustomAuthStateProvider>();
 
 builder.Services.AddHttpClient();
 builder.Services.AddTransient<ICoffeeService, CoffeeService>();
