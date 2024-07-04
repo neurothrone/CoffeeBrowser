@@ -1,0 +1,23 @@
+﻿@page "/"
+@* @using Microsoft.AspNetCore.Authorization *@
+@* @attribute [Authorize] *@
+@* @attribute [Authorize(Roles = "admin,superuser")] *@
+
+<h1>Wired Brain Coffee</h1>
+
+<AuthorizeView>
+    <Authorized>
+        <p>Welcome to the coffee browser app.</p>
+    </Authorized>
+
+    <NotAuthorized>
+        <p>Please log in.</p>
+    </NotAuthorized>
+</AuthorizeView>
+
+@* <AuthorizeView Roles="admin,superuser"> *@
+<AuthorizeView Roles="admin">
+    <div style="background-color: #444;color: white;padding: 10px">
+        This is only visible for admins.
+    </div>
+</AuthorizeView>

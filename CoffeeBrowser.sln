@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBrowser.Maui", "CoffeeBrowser.Maui\CoffeeBrowser.Maui.csproj", "{E0B1BCCB-E1F4-4055-9DD0-5EA9F5F298C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBrowser.Library", "CoffeeBrowser.Library\CoffeeBrowser.Library.csproj", "{0E84867F-AEBD-43DD-A945-1DA8B458AFE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CoffeeBrowser.BlazorWeb", "CoffeeBrowser.BlazorWeb\CoffeeBrowser.BlazorWeb.csproj", "{2DBEBBB3-4727-4BD6-B797-14D7C1284C71}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E0B1BCCB-E1F4-4055-9DD0-5EA9F5F298C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0B1BCCB-E1F4-4055-9DD0-5EA9F5F298C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0B1BCCB-E1F4-4055-9DD0-5EA9F5F298C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0B1BCCB-E1F4-4055-9DD0-5EA9F5F298C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0E84867F-AEBD-43DD-A945-1DA8B458AFE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0E84867F-AEBD-43DD-A945-1DA8B458AFE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0E84867F-AEBD-43DD-A945-1DA8B458AFE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0E84867F-AEBD-43DD-A945-1DA8B458AFE8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2DBEBBB3-4727-4BD6-B797-14D7C1284C71}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2DBEBBB3-4727-4BD6-B797-14D7C1284C71}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2DBEBBB3-4727-4BD6-B797-14D7C1284C71}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2DBEBBB3-4727-4BD6-B797-14D7C1284C71}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
